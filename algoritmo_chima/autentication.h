@@ -6,16 +6,17 @@
 #ifndef AUTENTICATION_H
 #define AUTENTICATION_H
 
-// INCLUDES //
+// INCLUSÕES //
 
 #include <stdint.h>
 
-// DEFINES //
+// DEFINIÇÕES //
 
 #define LESAMNTALW_HASH_BITLENGTH 256
 #define ENDIAN isBigEndian()
 
-// TYPES //
+
+// TIPOS //
 
 /**
  * @brief Códigos de retorno da API de hash.
@@ -29,7 +30,8 @@ typedef enum {
 typedef unsigned char BitSequence;
 typedef uint64_t DataLength;
 
-// FUNCTION PROTOTYPES //
+
+// PROTÓTIPOS DE FUNÇÃO //
 
 /**
  * @brief Calcula o hash Lesamnta-LW.

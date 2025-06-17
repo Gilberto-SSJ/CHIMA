@@ -1,6 +1,6 @@
 /**
  * @file utils.h
- * @author 
+ * @author
  * @brief Funções auxiliares para criptografia e utilidades diversas.
  * @version 
  * @date 2025-06-13
@@ -12,14 +12,14 @@
 #ifndef UTILS_H
 #define UTILS_H
 
-// INCLUDES //
+// INCLUSÕES //
 
 #include <stdlib.h>
 #include <string.h>
 #include "DrvH_PRINT.h"
 
-// TYPES //
 
+// TIPOS //
 /**
  * @brief 
  * 
@@ -41,12 +41,14 @@ typedef enum {
     CIPHER_MODE_CTR
 } CipherMode;
 
-// GLOBAL VARIABLES //
+
+// VARIÁVEIS GLOBAIS //
 
 extern const uint8_t g_AesSBox[256];
 extern const uint8_t g_AesRcon[11];
 
-// FUNCTION PROTOTYPES //
+
+// PROTÓTIPOS DE FUNÇÃO //
 
 uint8_t *get_iv_buffer(void);
 

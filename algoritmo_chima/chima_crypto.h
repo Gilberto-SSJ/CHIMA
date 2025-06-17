@@ -12,12 +12,12 @@
 #ifndef CRYPTOGRAPHY_H
 #define CRYPTOGRAPHY_H
 
-// INCLUDES //
+
+// INCLUSÕES //
 
 #include "utils.h"
 
-// DEFINES //
-
+// DEFINIÇÕES //
 /**
  * @brief Define função de rotação de palavras binárias
  * @param buf Variável de uso temporário
@@ -39,7 +39,8 @@
  */
 #define SUBWORD(w0, w1, w2, w3) (w0 = g_AesSBox[w0], w1 = g_AesSBox[w1], w2 = g_AesSBox[w2], w3 = g_AesSBox[w3])
 
-// FUNCTION PROTOTYPES //
+
+// PROTÓTIPOS DE FUNÇÃO //
 
 void AESKeyExpansion(const uint8_t *key, uint8_t *expandedKeys);
 uint64_t ApplySBoxAES(uint64_t x, int num_bytes);

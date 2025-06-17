@@ -13,19 +13,22 @@
 #include <string.h>
 #include <stdio.h>
 
-// GLOBAL VARIABLES //
+
+// VARIÁVEIS GLOBAIS //
+
 
 // Ponteiro global para a estrutura
 static xLowDriverStackPRINT_t *xLowDriverStackPRINTLocal;
 
 static char cBuffer[256] = {0};
 
-// FUNCTIONS //
+
+// FUNÇÕES //
 
 /**
-  * @brief 	Initializes Low Drivers and Get PRINT Handler Struct
-  * @param	xLowDriverStackPRINT_t *xLowDriverStackPRINT :
-  * @param	void *vPRINTX_Handle :
+  * @brief 	Inicializa os drivers de baixo nível e obtém a estrutura PRINT
+  * @param	xLowDriverStackPRINT_t *xLowDriverStackPRINT : estrutura de funções do usuário
+  * @param	void *vPRINTX_Handle : não utilizado
   * @retval void
   */
 void Init_Low_Drivers_Stack_PRINT(xLowDriverStackPRINT_t *xLowDriverStackPRINT)
@@ -35,7 +38,7 @@ void Init_Low_Drivers_Stack_PRINT(xLowDriverStackPRINT_t *xLowDriverStackPRINT)
 
 
 /**
-  * @brief 		  Reads a string from the console until 'Enter' or 32 characters are read
+  * @brief 		  Lê uma string do console até pressionar 'Enter' ou ler 32 caracteres
   * @param[out] char *pcString : 
   * @retval 	  uint16_t ui16DataSize
   */
@@ -72,7 +75,7 @@ int PRINT_ReadConsole(char *pcString)
 }
 
 /**
-  * @brief 		  Writes a string to the console 
+  * @brief 		  Escreve uma string no console 
   * @param[out] char *pcString : 
   * @retval 	  uint16_t ui16DataSize
   */

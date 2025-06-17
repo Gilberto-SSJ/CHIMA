@@ -9,21 +9,23 @@
  * 
  */
 
-// INCLUDES //
+
+// INCLUSÕES //
 
 #include "chima_crypto.h"
 #include "utils.h"
 
-// GLOBAL VARIABLES //
+
+// VARIÁVEIS GLOBAIS //
 
 static uint8_t g_num_rodadas_feistel = 22;
 
-// FUNCTIONS //
+// FUNÇÕES //
 
 /**
- * @brief Set the Number Of Rounds
- * 
- * @param ui8Set 
+ * @brief Define o número de rodadas da rede Feistel
+ *
+ * @param ui8Set Quantidade de rodadas
  */
 void CHIMA_setNumberOfRounds(uint8_t ui8Set) {
 	g_num_rodadas_feistel = ui8Set;
@@ -245,7 +247,8 @@ void CHIMA_Decipher(const uint8_t *ciphertext, const uint8_t *key, const uint8_t
     }
 }
 
-// CIPHER MODE //
+
+// MODO DE CIFRA //
 
 /**
  * @brief Expande a chave mestra em chaves de rodada de 32 bits.

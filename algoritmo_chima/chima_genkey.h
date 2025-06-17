@@ -12,11 +12,12 @@
 #ifndef GENKEY_H
 #define GENKEY_H
 
-// INCLUDES //
+
+// INCLUSÕES //
 
 #include <stdint.h>
 
-// DEFINES //
+// DEFINIÇÕES //
 
 #define STORE_COUNT      64
 #define ITER_BUFFER_SIZE 1000
@@ -30,8 +31,8 @@
  */
 #define AVALANCHE(x) (((x) * 0xD168AAAD) ^ (((x) * 0xD168AAAD) >> 16))
 
-// TYPES //
 
+// TIPOS //
 /**
  * @brief União para acessar partes de um número de ponto flutuante.
  */
@@ -51,7 +52,7 @@ typedef struct {
     uint8_t bytes[16]; 
 } FloatArray128;
 
-// FUNCTION PROTOTYPES //
+// PROTÓTIPOS DE FUNÇÃO //
 
 /**
  * @brief Gera uma chave de 128 bits usando mapa logístico.

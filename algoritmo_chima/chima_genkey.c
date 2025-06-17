@@ -9,42 +9,45 @@
  * 
  */
 
-// INCLUDES //
+
+// INCLUSÕES //
+
 
 #include "chima_genkey.h"
 #include "utils.h"
 
-// GLOBAL VARIABLES //
+
+// VARIÁVEIS GLOBAIS //
 
 static float lastIteration = 0.0;
 
-// FUNCTIONS //
+// FUNÇÕES //
 
 /**
- * @brief Get the Last Iteration floating point value
- * 
- * @return float 
- */
+ * @brief Obtém o valor da última iteração calculada
+ *
+ * @return float Valor da última iteração
+
 float getLastIteration(void) {
 	return lastIteration;
 }
 
 /**
- * @brief Set the Last Iteration floating point value
- * 
- * @param last 
- */
+ * @brief Define o valor da última iteração calculada
+ *
+ * @param last Novo valor
+
 void setLastIteration(float last) {
 	lastIteration = last;
 }
 
 /**
- * @brief Gera os últimos N values do mapa logístico, descartando os primeiros.
+ * @brief Gera os últimos N valores do mapa logístico, descartando os primeiros.
  * 
  * @param totalIter Número total de iterações
- * @param lastValues Vetor de saída para os últimos STORE_COUNT values
+ * @param lastValues Vetor de saída para os últimos STORE_COUNT valores
  * @param r Parâmetro do mapa logístico (ex.: 3.99f)
- * @param x0 value inicial do mapa (0 < x0 < 1)
+ * @param x0 valor inicial do mapa (0 < x0 < 1)
  */
 static void GenerateLogisticMapLastN(float *lastValues, uint32_t totalIter, float r, float x0) {
     float x = x0;

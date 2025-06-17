@@ -9,7 +9,7 @@
  * 
  */
 
-// INCLUDES //
+// INCLUSÕES //
 
 #include <stdint.h>
 #include <stdio.h>
@@ -20,19 +20,19 @@
 #include "autentication.h"
 #include "utils.h"
 
-// DEFINES //
+// DEFINIÇÕES //
 
-// Logistic Map Parameters
+// Parâmetros do Mapa Logístico
 #define LOGISTIC_R        3.72f
 #define LOGISTIC_X0       0.5f
 
-// Crytography Parameters
+// Parâmetros de Criptografia
 #define BLOCK_SIZE        BLOCK_MODE_128
 #define OPERATION_MODE    CIPHER_MODE_CBC
 #define NUMBER_OF_ROUNDS  22
 
-// FUNCTIONS //
 
+// FUNÇÕES //
 /**
  * @brief Demonstra cifragem, decifragem e autenticação de um valor.
  */
