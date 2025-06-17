@@ -13,12 +13,12 @@
 #ifndef DRVH_PRINT_H
 #define DRVH_PRINT_H
 
+
 // INCLUSÕES //
 
 #include <stdint.h>
 
 // TIPOS //
-
 
 /* Definição de tipo para as funções que o usuario
 da stack de crypto vai ter que providenciar em uso */
@@ -32,6 +32,7 @@ typedef struct {
     Function_PRINT_Write pPRINT_Write;
     Function_PRINT_Read  pPRINT_Read;
 } xLowDriverStackPRINT_t;
+
 
 // PROTÓTIPOS DE FUNÇÃO //
 

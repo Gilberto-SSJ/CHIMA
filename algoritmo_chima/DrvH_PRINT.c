@@ -13,12 +13,15 @@
 #include <string.h>
 #include <stdio.h>
 
+
 // VARIÁVEIS GLOBAIS //
+
 
 // Ponteiro global para a estrutura
 static xLowDriverStackPRINT_t *xLowDriverStackPRINTLocal;
 
 static char cBuffer[256] = {0};
+
 
 // FUNÇÕES //
 

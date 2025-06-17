@@ -12,6 +12,7 @@
 #ifndef GENKEY_H
 #define GENKEY_H
 
+
 // INCLUSÕES //
 
 #include <stdint.h>
@@ -30,8 +31,8 @@
  */
 #define AVALANCHE(x) (((x) * 0xD168AAAD) ^ (((x) * 0xD168AAAD) >> 16))
 
-// TIPOS //
 
+// TIPOS //
 /**
  * @brief União para acessar partes de um número de ponto flutuante.
  */

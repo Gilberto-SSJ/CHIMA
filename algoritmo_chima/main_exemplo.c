@@ -31,8 +31,8 @@
 #define OPERATION_MODE    CIPHER_MODE_CBC
 #define NUMBER_OF_ROUNDS  22
 
-// FUNÇÕES //
 
+// FUNÇÕES //
 /**
  * @brief Demonstra cifragem, decifragem e autenticação de um valor.
  */

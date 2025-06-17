@@ -12,12 +12,12 @@
 #ifndef CRYPTOGRAPHY_H
 #define CRYPTOGRAPHY_H
 
+
 // INCLUSÕES //
 
 #include "utils.h"
 
 // DEFINIÇÕES //
-
 /**
  * @brief Define função de rotação de palavras binárias
  * @param buf Variável de uso temporário
@@ -38,6 +38,7 @@
  * @return Valores substituídos pela S-BOX
  */
 #define SUBWORD(w0, w1, w2, w3) (w0 = g_AesSBox[w0], w1 = g_AesSBox[w1], w2 = g_AesSBox[w2], w3 = g_AesSBox[w3])
+
 
 // PROTÓTIPOS DE FUNÇÃO //
 

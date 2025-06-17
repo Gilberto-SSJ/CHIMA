@@ -9,10 +9,12 @@
  * 
  */
 
+
 // INCLUSÕES //
 
 #include "chima_crypto.h"
 #include "utils.h"
+
 
 // VARIÁVEIS GLOBAIS //
 
@@ -244,6 +246,7 @@ void CHIMA_Decipher(const uint8_t *ciphertext, const uint8_t *key, const uint8_t
         case CIPHER_MODE_CTR: CHIMA_DecryptCTR(ciphertext, key, iv, decrypted, xSize); break;
     }
 }
+
 
 // MODO DE CIFRA //
 

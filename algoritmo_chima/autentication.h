@@ -15,6 +15,7 @@
 #define LESAMNTALW_HASH_BITLENGTH 256
 #define ENDIAN isBigEndian()
 
+
 // TIPOS //
 
 /**
@@ -28,6 +29,7 @@ typedef enum {
 
 typedef unsigned char BitSequence;
 typedef uint64_t DataLength;
+
 
 // PROTÓTIPOS DE FUNÇÃO //
 

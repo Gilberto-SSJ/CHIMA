@@ -9,10 +9,13 @@
  * 
  */
 
+
 // INCLUSÕES //
+
 
 #include "chima_genkey.h"
 #include "utils.h"
+
 
 // VARIÁVEIS GLOBAIS //
 
@@ -24,7 +27,7 @@ static float lastIteration = 0.0;
  * @brief Obtém o valor da última iteração calculada
  *
  * @return float Valor da última iteração
- */
+
 float getLastIteration(void) {
 	return lastIteration;
 }
@@ -33,7 +36,7 @@ float getLastIteration(void) {
  * @brief Define o valor da última iteração calculada
  *
  * @param last Novo valor
- */
+
 void setLastIteration(float last) {
 	lastIteration = last;
 }

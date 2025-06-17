@@ -96,11 +96,13 @@ static const uint32_t C[64] = {
  * @brief Verifica se a arquitetura é Big Endian
  *
  * @return uint8_t 1 para Big Endian, 0 para Little Endian
-*/
-const uint8_t isBigEndian(void){
+ */
+
+ const uint8_t isBigEndian(void)
+ {
 	volatile uint32_t i = 0x01234567;
 	return (*((uint8_t*)(&i))) == 0x01;
-}
+ }
 
 /**
  * @brief Multiplicação por 2 no campo GF(256).
